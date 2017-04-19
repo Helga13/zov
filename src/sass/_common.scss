@@ -358,6 +358,27 @@ header {
 	}
 }
 
+/* custom scrollbar */
+
+.ps-container>.ps-scrollbar-y-rail{
+	width: 10px;
+}
+
+.ps-container.ps-active-y>.ps-scrollbar-y-rail{
+	background-color: #fff;
+	opacity: 1;
+}
+
+.ps-container>.ps-scrollbar-y-rail:active>.ps-scrollbar-y, 
+.ps-container>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y {
+  width: 6px;
+}
+
+.ps-container.ps-active-y>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.ps-container:hover>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y{
+	background-color: #fffc67;
+}
+
 /* --- end of main_sidebar --- */
 
 /* --- index main_content --- */

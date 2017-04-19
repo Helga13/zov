@@ -11,19 +11,18 @@ $(document).ready(function () {
 
         if (!parent.hasClass('is-active')) {
             accord.stop(true, true).removeClass('is-active');
-            block.stop(true, true).slideUp(500);
+            block.stop(true, true).slideUp(400);
             parent.stop(true, true).addClass('is-active');
-            blockThis.stop(true, true).slideDown(500);
+            blockThis.stop(true, true).slideDown(400);
         } else {
             parent.stop(true, true).removeClass('is-active');
-            blockThis.stop(true, true).slideUp(500);
+            blockThis.stop(true, true).slideUp(400);
         }
         return false;
 		
 	});
 	
 
-	
 	// sticky sidebar
 	
 		function getTopOffset(e) { 
@@ -36,19 +35,21 @@ $(document).ready(function () {
 			var topPos = getTopOffset( block );
 			window.onscroll = function() {
 				var newcss = (topPos < window.pageYOffset) ? 
-					'top:0; bottom:0; position: fixed;' : 'position:static;';
+					'top:0; bottom:0; position: fixed; overflow:auto' : 'position:static;';
 				block.setAttribute( 'style', newcss );
 			}
 		}
-
+	
 	
 	$('.slider_main').slick({
 		arrows: false,
 		autoplay: true
 	});
 	
+	
 	$("#phone").mask("+375 (99) 999 99 99");
  
 	
+	$('#fixblock').perfectScrollbar();
 	
 })
