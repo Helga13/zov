@@ -52,4 +52,27 @@ $(document).ready(function () {
 	
 	$('#fixblock').perfectScrollbar();
 	
+	
+	$('.card_slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider_nav'
+	});
+	$('.slider_nav').slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		asNavFor: '.card_slider',
+		arrows: false,
+//		centerMode: true,
+		focusOnSelect: true
+	});
+	
+	//tabs
+
+	$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+		$(this).addClass('active').siblings().removeClass('active').closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active').fadeIn();
+	});
+	
 })

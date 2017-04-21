@@ -90,7 +90,7 @@ textarea {
 
 /* --- end of general styles --- */
 
-#main_wrap{
+.main_wrap{
 	max-width: 1900px;
 	margin: 0 auto;
 }
@@ -226,6 +226,7 @@ header {
 
 .breadcrumbs{
 	@include font-size(0);
+	padding-bottom: 10px;
 	.crumb {
 		display: inline-block;
 		@include font-size(1.2);
@@ -1147,18 +1148,47 @@ p.inner_text {
 .catalog_item{
 	display: inline-block;
 	width: 33.333%;
-	padding: 10px 10px 20px;
+	padding: 10px;
 	vertical-align: top;
+	&.catalog_item_border > a{
+		display: inline-block;
+		height: 100%;
+		border-bottom: 1px solid #000;
+	}
 }
 
 .catalog_item__img{
+	overflow: hidden;
+	position: relative;
+	line-height: 0;
+	.discount {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70px;
+		text-align: center;
+		height: 40px;
+		@include font-size(2.0);
+		@include line-height(4.0);
+		font-family: 'Impact-Regular', $font-stack-helvetica;
+		background-color: $btn;
+		z-index: 1;
+	}
 	img{
+		object-fit: cover;
 		width: 100%;
+		transition: transform 0.4s ease;
+	}
+}
+
+.catalog_item > a:hover{
+	.catalog_item__img > img{
+		transform: scale(1.1) translateZ(0);
 	}
 }
 
 .catalog_item__text{
-	padding: 10px;
+	padding: 16px 10px 0 10px;
 	.name{
 		@include font-size(1.6);
 		@include line-height(2.0);
@@ -1182,6 +1212,17 @@ p.inner_text {
 		padding: 5px 0;
 	}
 }
+
+.desk {
+	padding-bottom: 25px;
+	.item_title{
+		padding-bottom: 2px;
+	}
+	.simple_text {
+		margin: 0 0 18px;
+	}
+}
+
 
 
 /* --- end of card page --- */
