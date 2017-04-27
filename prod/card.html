@@ -14,23 +14,26 @@
 		<header>
 		<!--	<div class="wrap">-->
 				<div class="header_item header_item__left">
-					<img class="header_left" src="../img/png/header_left.png" alt="">
+					<img class="header_left" src="img/png/header_left.png" alt="">
 				</div>
 				<div class="header_item header_item__center">
 					<h1>Кухни “ЗОВ” на заказ</h1>
 				<div class="declaration">Создаем мечту с 1998 г.</div>
 					<ul class="contacts_header">
+					<li>
+							<a href="#" class="company">О компании</a>
+						</li>
 						<li>
 							<a href="#" class="geo">
 								<span class="icon_header">
-									<img src="../img/icons/icon_marker.png" alt="">
+									<img src="img/icons/icon_marker.png" alt="">
 								</span>Салоны в Минске
 							</a>
 						</li>
 						<li>
 							<a href="tel:+375337111054">
 								<span class="icon_header">
-									<img src="../img/icons/icon_phone.png" alt="">
+									<img src="img/icons/icon_phone.png" alt="">
 								</span>+375 (33) 711 1054
 							</a>
 						</li>
@@ -42,27 +45,36 @@
 					</ul>
 				</div>
 				<div class="header_item header_item__right">
-					<img class="header_right header_right__right" src="../img/png/header_right.png" alt="">
+					<img class="header_right header_right__right" src="img/png/header_right.png" alt="">
 				</div>
 		<!--	</div>-->
 		</header>
 		
-		<div class="main_nav">
+		<div id="fixmenu" class="main_nav">
 			<ul class="main_wrap">
 				<li><a href="#"><span data-hover="Главная">Главная</span></a></li>
 				<li><a href="#"><span data-hover="О компании">О компании</span></a></li>
-				<li><a href="#"><span data-hover="Скидки">Скидки</span></a></li>
-				<li><a href="#"><span data-hover="Распродажа">Распродажа</span></a></li>
-				<li><a href="#"><span data-hover="Рассрочка">Рассрочка</span></a></li>
+				<li class="visible"><a href="#"><span data-hover="Скидки">Скидки</span></a></li>
+				<li class="visible"><a href="#"><span data-hover="Распродажа">Распродажа</span></a></li>
+				<li class="visible"><a href="#"><span data-hover="Рассрочка">Рассрочка</span></a></li>
 				<li><a href="#"><span data-hover="Cалоны">Cалоны</span></a></li>
 				<li><a href="#"><span data-hover="Вызов дизайнера">Вызов дизайнера</span></a></li>
 				<li><a href="#"><span data-hover="Дизайнерам и архитекторам">Дизайнерам и архитекторам</span></a></li>
 			</ul>
+			<div class="nav_btn">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
 		</div>
-		<div id="main_wrap">
+		<div class="main_wrap">
 		<div id="fixblock" class="main_sidebar">
 			<div class="main_sidebar__item">
-				<div class="logo"> <img src="../img/logo.jpg" alt=""> </div>
+				<div class="logo">
+					<div class="close">
+		<!--			<img src="../img/icons/close.png" alt="">-->
+					</div>
+					<img src="img/logo.jpg" alt=""> </div>
 			</div>
 			<div class="main_sidebar__item">
 				<div class="main_sidebar__item__head">Материал</div>
@@ -80,37 +92,37 @@
 				<ul class="sidebar_list sidebar_list__form">
 					<li>
 						<a href="#" class="first"> 
-							<span class="icon_kitchens"><img src="../img/kitchen_form/corner_kitchens.png" alt=""></span> 
+							<span class="icon_kitchens"><img src="img/kitchen_form/corner_kitchens.png" alt=""></span> 
 							<span class="value">Угловые кухни</span> 
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span class="icon_kitchens"><img src="../img/kitchen_form/linear_kitchens.png" alt=""></span> 
+							<span class="icon_kitchens"><img src="img/kitchen_form/linear_kitchens.png" alt=""></span> 
 							<span class="value">Линейные кухни</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span class="icon_kitchens"><img src="../img/kitchen_form/kitchen_with_a_photopanel.png" alt=""></span> 
+							<span class="icon_kitchens"><img src="img/kitchen_form/kitchen_with_a_photopanel.png" alt=""></span> 
 							<span class="value">Кухни с фотопанелью</span>	
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span class="icon_kitchens"><img src="../img/kitchen_form/kitchen_with_island.png" alt=""></span> 
+							<span class="icon_kitchens"><img src="img/kitchen_form/kitchen_with_island.png" alt=""></span> 
 							<span class="value">Кухни с островом</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span class="icon_kitchens"><img src="../img/kitchen_form/kitchen_with_window.png" alt=""></span> 
+							<span class="icon_kitchens"><img src="img/kitchen_form/kitchen_with_window.png" alt=""></span> 
 							<span class="value">Кухни с окном</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span class="icon_kitchens"><img src="../img/kitchen_form/kitchen_with_breakfast_bar.png" alt=""></span> 
+							<span class="icon_kitchens"><img src="img/kitchen_form/kitchen_with_breakfast_bar.png" alt=""></span> 
 							<span class="value">Кухни с барной стойкой</span>
 						</a>
 					</li>
@@ -137,7 +149,7 @@
 				</ul>
 			</div> <a href="#" class="btn download_catalog">Скачать каталог</a> 
 		</div>
-		<div id="main_content">
+		<div class="main_content modifier">
 			<ul class="breadcrumbs">
 				<li class="crumb first_crumb"><a href="#">Главная</a></li>
 				<li class="crumb"><a href="#">Кухни из массива</a></li>
@@ -208,61 +220,66 @@
 				</div>
 				<div class="row">
 				<ul class="advantages">
-					<li>
-						<a href="#">
-							<span class="icon"><img src="img/icons/icon_sample.png" alt=""></span>
-							<span class="text">Вызвать специалиста на замер</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="icon"><img src="img/icons/icon_des.png" alt=""></span>
-							<span class="text">Записаться на встречу к дизайнеру</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="icon"><img src="img/icons/icon_issue.png" alt=""></span>
-							<span class="text">Оформить кухню в рассрочку</span>
-						</a>
-					</li>
-				</ul>
+						<li>
+							<a href="#" class="popap_block" data-id="sample">
+								<span class="icon"><img src="img/icons/icon_sample.png" alt=""></span>
+								<span class="text">Вызвать специалиста на замер</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="popap_block" data-id="des">
+								<span class="icon"><img src="img/icons/icon_des.png" alt=""></span>
+								<span class="text">Записаться на встречу к дизайнеру</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="popap_block" data-id="issue">
+								<span class="icon"><img src="img/icons/icon_issue.png" alt=""></span>
+								<span class="text">Оформить кухню в рассрочку</span>
+							</a>
+						</li>
+					</ul>
 			</div>
 				<div class="row">
 					<div class="block_title">Составление дизайн-проекта</div>
 					<p class="simple_text">Укажите параметры кухни, которую хотели бы заказать, и наш специалистрассчитает для<br> вас ее стоимость очень быстро и абсолютно <span class="bold">бесплатно</span>.</p>
 				</div>
 				<div class="row row_margin">
+				<form method="post" class="design_project_form">
 					<div class="tabs">
-						<div class="tabs__wrap">
+						<div class="tabs__wrap tabs__wrap__radio">
 						<div class="item_title">1&nbsp;&nbsp;Выберите форму </div>
 						<ul class="tabs__caption">
 							<li class="active">
               	<label for="line">
-                  <input type="radio" id="line" name="kitchenForm" value="1" checked>
-                  <img src="img/kitchen_form_card/kithen_form_line.png" alt="">
-                  <span>Прямая</span>
+										<input type="radio" id="line" name="kitchenForm" value="1" checked>
+										<span>Прямая</span>
+										<img src="img/kitchen_form_card/kithen_form_line.png" alt="">
+										
                 </label>
 							</li>
 							<li>
               	<label for="left">
                   <input type="radio" id="left" name="kitchenForm" value="2" >
-                  <img src="img/kitchen_form_card/kithen_form_left.png" alt="">
                   <span>С углом слева</span>
+                  <img src="img/kitchen_form_card/kithen_form_left.png" alt="">
+                  
                 </label>
 							</li>
 							<li>
               	<label for="right">
                   <input type="radio" id="right" name="kitchenForm" value="3">
-                  <img src="img/kitchen_form_card/kithen_form_right.png" alt="">
                   <span>С углом справа</span>
+                  <img src="img/kitchen_form_card/kithen_form_right.png" alt="">
+                  
                 </label>
 							</li>
 							<li>
               	<label for="both">
                   <input type="radio" id="both" name="kitchenForm" value="4">
-                  <img src="img/kitchen_form_card/kithen_form_both.png" alt="">
                   <span>П-образная</span>
+                  <img src="img/kitchen_form_card/kithen_form_both.png" alt="">
+                  
                 </label>
 							</li>
 						</ul>
@@ -294,7 +311,7 @@
 					</div>
 					<div class="contact_form">
 						<div class="item_title">3&nbsp;&nbsp;Отправте свои контактные данные нашему специалисту</div>
-						<form class="js-validate question_form question_form__card" method="post">
+						<div class="question_form question_form__card">
 						<div class="field">
 								<label for="name" class="simple_text">Ваше имя</label>
 								<input name="NAME" id="name" type="text">
@@ -308,13 +325,14 @@
 								<input name="PHONE" id="phone" type="text" placeholder="+375 (__) ___ __ __">
 							</div>	
 							<button value="Задать вопрос" type="submit" class="btn get_project">Получить бесплатный дизайн-проект</button>
-					</form>
 					</div>
+					</div>
+					</form>
 				</div>
 				<div class="row">
 					<p class="simple_text">Кухня из массива серии "Оптима" — это отличная возможность приобрести качественную мебель по низкой цене. В кухнях "Оптима" сохраняются все лучшие качества бренда ЗОВ, а стоимость существенно ниже.</p>
 				</div>
-				<div class="row row_margin">
+				<div class="row row_margin b_bottom">
 					<div class="block_title recomended">Рекомендуемые</div>
 					<div class="catalog_item">
 						<a href="#">
@@ -322,7 +340,11 @@
 								<img src="img/catalog_item/img1.jpg" alt="">
 							</div>
 							<div class="catalog_item__text">
-								<span class="name">Массив ольхи Т309-101 "Оптима"</span>
+								<div class="catalog_item__name">
+									<div class="catalog_item__name-inner">
+										<span class="name">Массив ольхи Т309-101 "Оптима"</span>
+									</div>
+								</div>
 								<div class="price">340 BYN / 1м.п.</div>
 							</div>
 						</a>
@@ -333,7 +355,11 @@
 								<img src="img/catalog_item/img2.jpg" alt="">
 							</div>
 							<div class="catalog_item__text">
-								<span class="name">Массив ясеня Т506-106</span>
+							<div class="catalog_item__name">
+									<div class="catalog_item__name-inner">
+										<span class="name">Массив ясеня Т506-106</span>
+									</div>
+								</div>
 								<div class="price">250 BYN / 1м.п.</div>
 							</div>
 						</a>
@@ -344,58 +370,129 @@
 								<img src="img/catalog_item/img1.jpg" alt="">
 							</div>
 							<div class="catalog_item__text">
-								<span class="name">Массив ясеня Т506-109</span>
+							<div class="catalog_item__name">
+									<div class="catalog_item__name-inner">
+										<span class="name">Массив ясеня Т506-109</span>
+									</div>
+								</div>
 								<div class="price">400 BYN  / 1м.п.</div>
 							</div>
 						</a>
 					</div>
-				</div>
-				<div class="row">
-					
-				</div>
-				<div class="row bg_white">
-					<div class="footer_nav">
-						<ul class="nav_item">
-							<li class="nav_title">Информация</li>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Салоны</a></li>
-							<li><a href="#">Кухни ЗОВ в России</a></li>
-							<li><a href="#">Сотрудничество</a></li>
-							<li><a href="#">Вызов дизайнера</a></li>
-							<li><a href="#">Связаться с нами</a></li>
-							<li><a href="#">Карта сайта</a></li>
-						</ul>
-						<ul class="nav_item">
-							<li class="nav_title">Форма кухни</li>
-							<li><a href="#">Угловые кухни</a></li>
-							<li><a href="#">Линейные кухни</a></li>
-							<li><a href="#">Кухни с фотопанелью</a></li>
-							<li><a href="#">Кухни с островом</a></li>
-							<li><a href="#">Кухни с окном</a></li>
-							<li><a href="#">Кухни с барной стойкой</a></li>
-						</ul>
-						<ul class="nav_item">
-							<li class="nav_title">Стиль кухни</li>
-							<li><a href="#">Классические</a></li>
-							<li><a href="#">Современные</a></li>
-							<li><a href="#">Кантри</a></li>
-							<li><a href="#">Хай-тек</a></li>
-							<li><a href="#">Фасады ЗОВ</a></li>
-						</ul>
-						<ul class="nav_item">
-							<li class="nav_title">Цвет кухни</li>
-							<li><a href="#">Одноцветные кухни</a></li>
-							<li><a href="#">Двухцветные кухни</a></li>
-							<li><a href="#">Светлые кухни</a></li>
-							<li><a href="#">Темные кухни</a></li>
-							<li><a href="#">Кухни под дерево</a></li>
-						</ul>
+					<div class="catalog_item">
+						<a href="#">
+							<div class="catalog_item__img">
+								<img src="img/catalog_item/img2.jpg" alt="">
+							</div>
+							<div class="catalog_item__text">
+							<div class="catalog_item__name">
+									<div class="catalog_item__name-inner">
+										<span class="name">Массив ясеня Т506-106</span>
+									</div>
+								</div>
+								<div class="price">250 BYN / 1м.п.</div>
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="row"><div class="copyright">&copy; 2011-2017 <a class="copy_link" href="zov-minsk.by">zov-minsk.by</a></div></div>
 		</div>
-
+		<div class="main_content">
+			<div class="row bg_white">
+				<div class="footer_nav">
+					<ul class="nav_item">
+						<li class="nav_title">Информация</li>
+						<li><a href="#"><span class="after">О компании</span></a></li>
+						<li><a href="#"><span class="after">Салоны</span></a></li>
+						<li><a href="#"><span class="after">Кухни ЗОВ в России</span></a></li>
+						<li><a href="#"><span class="after">Сотрудничество</span></a></li>
+						<li><a href="#"><span class="after">Вызов дизайнера</span></a></li>
+						<li><a href="#"><span class="after">Связаться с нами</span></a></li>
+						<li><a href="#"><span class="after">Карта сайта</span></a></li>
+					</ul>
+					<ul class="nav_item">
+						<li class="nav_title">Форма кухни</li>
+						<li><a href="#"><span class="after">Угловые кухни</span></a></li>
+						<li><a href="#"><span class="after">Линейные кухни</span></a></li>
+						<li><a href="#"><span class="after">Кухни с фотопанелью</span></a></li>
+						<li><a href="#"><span class="after">Кухни с островом</span></a></li>
+						<li><a href="#"><span class="after">Кухни с окном</span></a></li>
+						<li><a href="#"><span class="after">Кухни с барной стойкой</span></a></li>
+					</ul>
+					<ul class="nav_item">
+						<li class="nav_title">Стиль кухни</li>
+						<li><a href="#"><span class="after">Классические</span></a></li>
+						<li><a href="#"><span class="after">Современные</span></a></li>
+						<li><a href="#"><span class="after">Кантри</span></a></li>
+						<li><a href="#"><span class="after">Хай-тек</span></a></li>
+						<li><a href="#"><span class="after">Фасады ЗОВ</span></a></li>
+					</ul>
+					<ul class="nav_item">
+						<li class="nav_title">Цвет кухни</li>
+						<li><a href="#"><span class="after">Одноцветные кухни</span></a></li>
+						<li><a href="#"><span class="after">Двухцветные кухни</span></a></li>
+						<li><a href="#"><span class="after">Светлые кухни</span></a></li>
+						<li><a href="#"><span class="after">Темные кухни</span></a></li>
+						<li><a href="#"><span class="after">Кухни под дерево</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"><div class="copyright">&copy; 2011-2017 <a class="copy_link" href="zov-minsk.by">zov-minsk.by</a></div></div>
+		</div>
+		</div>
+		<div class="overlay popup" id="sample">
+		        <div class="popup_content">
+							<form action="">
+								<div class="text_block">
+									<div class="item_title">Вызвать специалиста на замер</div>
+								</div>
+								<div class="field">
+										<label for="sample_name" class="simple_text">Ваше имя</label>
+										<input name="NAME" id="sample_name" type="text">
+									</div>
+									<div class="field">
+										<label for="sample_phone" class="simple_text">Ваш номер телефона</label>
+										<input name="PHONE" id="sample_phone" type="text" placeholder="+375 (__) ___ __ __">
+									</div>
+										<button value="Задать вопрос" type="submit" class="btn">Задать вопрос</button>
+							</form>
+		        </div>
+		    </div>
+		    <div class="overlay popup" id="des">
+		        <div class="popup_content">
+							<form action="">
+								<div class="text_block">
+									<div class="item_title">Записаться на встречу к дизайнеру</div>
+								</div>
+								<div class="field">
+										<label for="des_name" class="simple_text">Ваше имя</label>
+										<input name="NAME" id="des_name" type="text">
+									</div>
+									<div class="field">
+										<label for="des_phone" class="simple_text">Ваш номер телефона</label>
+										<input name="PHONE" id="des_phone" type="text" placeholder="+375 (__) ___ __ __">
+									</div>
+										<button value="Задать вопрос" type="submit" class="btn">Задать вопрос</button>
+							</form>
+		        </div>
+		    </div>
+		    <div class="overlay popup" id="issue">
+		        <div class="popup_content">
+							<form action="">
+								<div class="text_block">
+									<div class="item_title">Оформить кухню в рассрочку</div>
+								</div>
+								<div class="field">
+										<label for="issue_name" class="simple_text">Ваше имя</label>
+										<input name="NAME" id="issue_name" type="text">
+									</div>
+									<div class="field">
+										<label for="issue_phone" class="simple_text">Ваш номер телефона</label>
+										<input name="PHONE" id="issue_phone" type="text" placeholder="+375 (__) ___ __ __">
+									</div>
+										<button value="Задать вопрос" type="submit" class="btn">Задать вопрос</button>
+							</form>
+		        </div>
+		    </div>
 		<script src="js/common.js"></script>
-		</div>
 	</body>
 </html>

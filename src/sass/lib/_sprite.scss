@@ -10,88 +10,110 @@
   At the bottom of this section, we provide information about the spritesheet itself
   $spritesheet: width height image $spritesheet-sprites
   */
+$close-name: 'close'
+$close-x: 0px
+$close-y: 0px
+$close-offset-x: 0px
+$close-offset-y: 0px
+$close-width: 125px
+$close-height: 125px
+$close-total-width: 188px
+$close-total-height: 165px
+$close-image: 'sprite.png'
+$close: 0px 0px 0px 0px 125px 125px 188px 165px 'sprite.png' 'close'
 $icon_des-name: 'icon_des'
-$icon_des-x: 0px
-$icon_des-y: 0px
-$icon_des-offset-x: 0px
-$icon_des-offset-y: 0px
+$icon_des-x: 125px
+$icon_des-y: 63px
+$icon_des-offset-x: -125px
+$icon_des-offset-y: -63px
 $icon_des-width: 38px
 $icon_des-height: 40px
-$icon_des-total-width: 105px
-$icon_des-total-height: 60px
+$icon_des-total-width: 188px
+$icon_des-total-height: 165px
 $icon_des-image: 'sprite.png'
-$icon_des: 0px 0px 0px 0px 38px 40px 105px 60px 'sprite.png' 'icon_des'
+$icon_des: 125px 63px -125px -63px 38px 40px 188px 165px 'sprite.png' 'icon_des'
 $icon_download-name: 'icon_download'
-$icon_download-x: 40px
-$icon_download-y: 40px
-$icon_download-offset-x: -40px
-$icon_download-offset-y: -40px
+$icon_download-x: 125px
+$icon_download-y: 103px
+$icon_download-offset-x: -125px
+$icon_download-offset-y: -103px
 $icon_download-width: 11px
 $icon_download-height: 15px
-$icon_download-total-width: 105px
-$icon_download-total-height: 60px
+$icon_download-total-width: 188px
+$icon_download-total-height: 165px
 $icon_download-image: 'sprite.png'
-$icon_download: 40px 40px -40px -40px 11px 15px 105px 60px 'sprite.png' 'icon_download'
+$icon_download: 125px 103px -125px -103px 11px 15px 188px 165px 'sprite.png' 'icon_download'
 $icon_download_arr-name: 'icon_download_arr'
-$icon_download_arr-x: 51px
-$icon_download_arr-y: 40px
-$icon_download_arr-offset-x: -51px
-$icon_download_arr-offset-y: -40px
+$icon_download_arr-x: 136px
+$icon_download_arr-y: 103px
+$icon_download_arr-offset-x: -136px
+$icon_download_arr-offset-y: -103px
 $icon_download_arr-width: 12px
 $icon_download_arr-height: 12px
-$icon_download_arr-total-width: 105px
-$icon_download_arr-total-height: 60px
+$icon_download_arr-total-width: 188px
+$icon_download_arr-total-height: 165px
 $icon_download_arr-image: 'sprite.png'
-$icon_download_arr: 51px 40px -51px -40px 12px 12px 105px 60px 'sprite.png' 'icon_download_arr'
+$icon_download_arr: 136px 103px -136px -103px 12px 12px 188px 165px 'sprite.png' 'icon_download_arr'
 $icon_issue-name: 'icon_issue'
-$icon_issue-x: 73px
-$icon_issue-y: 0px
-$icon_issue-offset-x: -73px
-$icon_issue-offset-y: 0px
+$icon_issue-x: 35px
+$icon_issue-y: 125px
+$icon_issue-offset-x: -35px
+$icon_issue-offset-y: -125px
 $icon_issue-width: 32px
 $icon_issue-height: 40px
-$icon_issue-total-width: 105px
-$icon_issue-total-height: 60px
+$icon_issue-total-width: 188px
+$icon_issue-total-height: 165px
 $icon_issue-image: 'sprite.png'
-$icon_issue: 73px 0px -73px 0px 32px 40px 105px 60px 'sprite.png' 'icon_issue'
+$icon_issue: 35px 125px -35px -125px 32px 40px 188px 165px 'sprite.png' 'icon_issue'
 $icon_marker-name: 'icon_marker'
-$icon_marker-x: 0px
-$icon_marker-y: 40px
-$icon_marker-offset-x: 0px
-$icon_marker-offset-y: -40px
+$icon_marker-x: 163px
+$icon_marker-y: 63px
+$icon_marker-offset-x: -163px
+$icon_marker-offset-y: -63px
 $icon_marker-width: 20px
 $icon_marker-height: 20px
-$icon_marker-total-width: 105px
-$icon_marker-total-height: 60px
+$icon_marker-total-width: 188px
+$icon_marker-total-height: 165px
 $icon_marker-image: 'sprite.png'
-$icon_marker: 0px 40px 0px -40px 20px 20px 105px 60px 'sprite.png' 'icon_marker'
+$icon_marker: 163px 63px -163px -63px 20px 20px 188px 165px 'sprite.png' 'icon_marker'
 $icon_phone-name: 'icon_phone'
-$icon_phone-x: 20px
-$icon_phone-y: 40px
-$icon_phone-offset-x: -20px
-$icon_phone-offset-y: -40px
+$icon_phone-x: 163px
+$icon_phone-y: 83px
+$icon_phone-offset-x: -163px
+$icon_phone-offset-y: -83px
 $icon_phone-width: 20px
 $icon_phone-height: 20px
-$icon_phone-total-width: 105px
-$icon_phone-total-height: 60px
+$icon_phone-total-width: 188px
+$icon_phone-total-height: 165px
 $icon_phone-image: 'sprite.png'
-$icon_phone: 20px 40px -20px -40px 20px 20px 105px 60px 'sprite.png' 'icon_phone'
+$icon_phone: 163px 83px -163px -83px 20px 20px 188px 165px 'sprite.png' 'icon_phone'
 $icon_sample-name: 'icon_sample'
-$icon_sample-x: 38px
-$icon_sample-y: 0px
-$icon_sample-offset-x: -38px
-$icon_sample-offset-y: 0px
+$icon_sample-x: 0px
+$icon_sample-y: 125px
+$icon_sample-offset-x: 0px
+$icon_sample-offset-y: -125px
 $icon_sample-width: 35px
 $icon_sample-height: 40px
-$icon_sample-total-width: 105px
-$icon_sample-total-height: 60px
+$icon_sample-total-width: 188px
+$icon_sample-total-height: 165px
 $icon_sample-image: 'sprite.png'
-$icon_sample: 38px 0px -38px 0px 35px 40px 105px 60px 'sprite.png' 'icon_sample'
-$spritesheet-width: 105px
-$spritesheet-height: 60px
+$icon_sample: 0px 125px 0px -125px 35px 40px 188px 165px 'sprite.png' 'icon_sample'
+$pimgpsh_fullsize_distr-name: 'pimgpsh_fullsize_distr'
+$pimgpsh_fullsize_distr-x: 125px
+$pimgpsh_fullsize_distr-y: 0px
+$pimgpsh_fullsize_distr-offset-x: -125px
+$pimgpsh_fullsize_distr-offset-y: 0px
+$pimgpsh_fullsize_distr-width: 63px
+$pimgpsh_fullsize_distr-height: 63px
+$pimgpsh_fullsize_distr-total-width: 188px
+$pimgpsh_fullsize_distr-total-height: 165px
+$pimgpsh_fullsize_distr-image: 'sprite.png'
+$pimgpsh_fullsize_distr: 125px 0px -125px 0px 63px 63px 188px 165px 'sprite.png' 'pimgpsh_fullsize_distr'
+$spritesheet-width: 188px
+$spritesheet-height: 165px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $icon_des $icon_download $icon_download_arr $icon_issue $icon_marker $icon_phone $icon_sample
-$spritesheet: 105px 60px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $close $icon_des $icon_download $icon_download_arr $icon_issue $icon_marker $icon_phone $icon_sample $pimgpsh_fullsize_distr
+$spritesheet: 188px 165px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables
