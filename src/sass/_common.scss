@@ -193,23 +193,23 @@ header {
 	@include font-size(0);
 	background-color: $yellow;
 	border-bottom: 1px solid #000;
-//	padding-left: 232px;
-	padding-left: 240px;
+	padding-left: 232px;
+//	padding-left: 240px;
 	height: 40px;
-	.main_wrap{
-		display: table;
-		width: 100%;
-	}
+//	.main_wrap{
+//		display: table;
+//		width: 100%;
+//	}
 	li {
-//		display: inline-block;
-		display: table-cell;
+		display: inline-block;
+//		display: table-cell;
 		height: 40px;
 		a{
 			text-transform: uppercase;
 			@include font-size(1.4);
 			@include line-height(4.0);
-//			padding: 0 18px;
-			padding: 0 5px;
+			padding: 0 18px;
+//			padding: 0 5px;
 			display: inline-block;
 			overflow: hidden;
 			span {

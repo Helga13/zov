@@ -7,10 +7,24 @@
 
 
 @media only screen and (max-width : 1366px) {
+	
+	.main_nav{
+		padding-left: 236px;
+		li > a{
+			padding: 0 14px;
+		}
+	}
 
 }
 
 @media only screen and (max-width : 1279px) {
+	
+	.main_nav{
+		padding-left: 240px;
+		li > a{
+			padding: 0 7px;
+		}
+	}
 
 }
 
@@ -95,6 +109,40 @@
 	.question_item.center{
 		width: 70%;
 	}
+	
+	.catalog_item{
+		width: 33.333%;
+	}
+	
+	/* card */
+	
+	.tabs__wrap:not(.tabs__wrap__radio){
+		padding-right: 30px;
+	}
+	
+	.tabs__content img{
+		width: 60%;
+	}
+	
+	.tabs__content{
+		top: 130px;
+	}
+	
+	.tabs__content .left{
+		left: 20px;
+	}
+	
+	.tabs__content .right{
+		right: 20px;
+	}
+	
+	.question_form__card .get_project{
+		height: auto;
+		width: 100%;
+		padding: 5px;
+		line-height: 20px;
+	}
+	
 }
 
 @media only screen and (max-width : 767px) {
@@ -259,10 +307,63 @@
 			}
 		}
 	}
+	
+	/* catalog */
+	
+	.catalog_item{
+		width: 50%;
+	}
+	
+	/* card */
+	
+	.card_block,
+	.description{
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.tabs,
+	.contact_form,
+	.tabs__wrap,
+	.tabs__wrap.tabs__wrap__radio{
+		width: 100%;
+	}
+	
+	.tabs__caption li{
+		width: 25%;
+	}
+	
+	.tabs__content{
+		position: relative;
+		display: none;
+		top: 0;
+		padding-top: 50px;
+		.top{
+			top: 20px;
+		}
+		.right,
+		.left{
+			top: 200px;
+		}
+		.right{
+			right: 60px;
+		}
+		.left{
+			left: 60px;
+		}
+		&.active{
+			display: block;
+		}
+	}
 
 }
 
 @media only screen and (max-width : 600px) {
+	
+	.block_title{
+		@include line-height(5.0);
+	}
 
 	.header_item.header_item__left, 
 	.header_item.header_item__right{
@@ -305,6 +406,27 @@
 		}
 	}
 	
+	.slider_block .slider_main{
+		height: 160px;
+	}
+	.bestsellers_item__img{
+		height: 96px;
+	}
+	
+	/* card */
+	.tabs__content{
+		.right,
+		.left{
+			top: 140px;
+		}
+		.right{
+			right: 40px;
+		}
+		.left{
+			left: 40px;
+		}
+	}
+	
 }
 
 @media only screen and (max-width : 480px) {
@@ -327,6 +449,48 @@
 	}
 	.nav_item a{
 		padding: 4px 0;
+	}
+	
+	/* catalog */
+	
+	.catalog_item{
+		width: 100%;
+	}
+	
+	/* card */
+	
+	.tabs__wrap:not(.tabs__wrap__radio){
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.tabs__caption li{
+		width: 50%;
+		padding: 6px 10px;
+//		height: 50px;
+		label{
+			padding: 0;
+		}
+		span{
+			display: inline-block;
+			width: 100%;
+			top: 3px;
+		}
+		img{
+			width: 60%;
+		}
+	}
+	.tabs__content{
+		.right,
+		.left{
+			top: 100px;
+		}
+		.right{
+			right: 20px;
+		}
+		.left{
+			left: 20px;
+		}
 	}
 	
 }
