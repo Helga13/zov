@@ -65,7 +65,6 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		asNavFor: '.card_slider',
 		arrows: false,
-//		centerMode: true,
 		focusOnSelect: true
 	});
 	
@@ -126,41 +125,35 @@ $(document).ready(function () {
 		dots: true
 	});
 	
-	if($(window).width() < 767) {
-		$('.category_kitchen_item_photo.h_200').parent().addClass('slider_photo');
-	} else {
-		$('.category_kitchen_item_photo.h_200').parent().removeClass('slider_photo');
-	}
-	
-	$('.slider_photo').slick({
-		arrows: false,
-		dots: true
-	});
-	
-	
+
 	// sticky menu
 	
 	if($(window).width() < 1160) {
-		function getTopOffset(e) { 
-			var y = 0;
-			do { y += e.offsetTop; } while (e = e.offsetParent);
-			return y;
-		}
-		var block = document.getElementById('fixmenu'); /* fixmenu - значение атрибута id блока */
+//		
+//			function getTopOffset(e) { 
+//			var y = 0;
+//			do { y += e.offsetTop; } while (e = e.offsetParent);
+//			return y;
+//				
+//		}
+		var block = document.getElementById('fixmenu'); /* fixblock - значение атрибута id блока */
 		if ( null != block ) {
 			var topPos = getTopOffset( block );
 			window.onscroll = function() {
+//				$('#fixmenu + .main_wrap').css({'padding-top': '40px'});
 				var newcss = (topPos < window.pageYOffset) ? 
-					'top:0; left:0; right:0; position: fixed; z-index:2;' : 'position:static;';
+					'top:0; left:0; right:0; position: fixed; overflow:auto; z-index:2;' : 'position:static;';
 				block.setAttribute( 'style', newcss );
-				$('.main_content.modifier').css({'padding-top': '50px'});
+				var newcss2 = (topPos < window.pageYOffset) ? 
+					'padding-top: 40px;' : 'padding-top: 0;';
+				block.nextElementSibling.setAttribute('style', newcss2);
 			}
+			
 		}
+	
 	} else {
 		
 	}
-	
-		
-	
+
 	
 })
